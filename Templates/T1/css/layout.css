@@ -791,26 +791,26 @@ call-to-action .button {
 /* h. Contact Section
 /* ------------------------------------------------------------------ */
 
-#contact {
+#section1 {
     background: #191919;
     padding-top: 96px;
     padding-bottom: 102px;
     color: #636363;
 }
-#contact .section-head { margin-bottom: 42px; }
+#section1 .section-head { margin-bottom: 42px; }
 
-#contact a, #contact a:visited  { color: #11ABB0; }
-#contact a:hover, #contact a:focus { color: #fff; }
+#section1 a, #section1 a:visited  { color: #11ABB0; }
+#section1 a:hover, #section1 a:focus { color: #fff; }
 
-#contact h1 {
+#section1 h1 {
     font: 18px/24px 'opensans-bold', sans-serif;
     text-transform: uppercase;
     letter-spacing: 3px;
     color: #EBEEEE;
     margin-bottom: 6px;
 }
-#contact h1 span { display: none; }
-#contact h1:before {
+#section1 h1 span { display: none; }
+#section1 h1:before {
     font-family: 'FontAwesome';
     content: "\f0e0";
     padding-right: 10px;
@@ -821,21 +821,21 @@ call-to-action .button {
     color: #ebeeee;
 }
 
-#contact h4 {
+#section1 h4 {
     font: 16px/24px 'opensans-bold', sans-serif;
     color: #EBEEEE;
     margin-bottom: 6px;
 }
-#contact p.lead {
+#section1 p.lead {
     font: 18px/36px 'opensans-light', sans-serif;
     padding-right: 3%;
 }
-#contact .header-col { padding-top: 6px; }
+#section1 .header-col { padding-top: 6px; }
 
 
-/* contact form */
-#contact form { margin-bottom: 30px; }
-#contact label {
+/* section1 form */
+#section1 form { margin-bottom: 30px; }
+#section1 label {
     font: 15px/24px 'opensans-bold', sans-serif;
     margin: 12px 0;
     color: #EBEEEE;
@@ -843,9 +843,9 @@ call-to-action .button {
     float: left;
     width: 26%;
 }
-#contact input,
-#contact textarea,
-#contact select {
+#section1 input,
+#section1 textarea,
+#section1 select {
     padding: 18px 20px;
     color: #eee;
     background: #373233;
@@ -856,13 +856,13 @@ call-to-action .button {
     line-height: 24px;
     width: 65%;
 }
-#contact input:focus,
-#contact textarea:focus,
-#contact select:focus {
+#section1 input:focus,
+#section1 textarea:focus,
+#section1 select:focus {
     color: #fff;
     background-color: #11ABB0;
 }
-#contact button.submit {
+#section1 button.submit {
     text-transform: uppercase;
     letter-spacing: 3px;
     color:#fff;
@@ -874,11 +874,11 @@ call-to-action .button {
     border-radius: 3px;
     margin-left: 26%;
 }
-#contact button.submit:hover {
+#section1 button.submit:hover {
     color: #0D0D0D;
     background: #fff;
 }
-#contact span.required {
+#section1 span.required {
     color: #11ABB0;
     font-size: 13px;
 }
