@@ -826,6 +826,11 @@ call-to-action .button {
     color: #EBEEEE;
     margin-bottom: 6px;
 }
+#section1 h5 {
+    font: 20px/28px 'opensans-bold', sans-serif;
+    color: #EBEEEE;
+    margin-bottom: 6px;
+}
 #section1 p.lead {
     font: 18px/36px 'opensans-light', sans-serif;
     padding-right: 3%;
