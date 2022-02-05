@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills&display=swap');
 /*
 =====================================================================
 *   Ceevee v1.0 Layout Stylesheet
@@ -821,6 +822,7 @@ call-to-action .button {
     color: #ebeeee;
 }
 
+/* Track_newest style */
 #track_newest h4 {
     font: 16px/24px 'opensans-bold', sans-serif;
     color: #EBEEEE;
@@ -831,12 +833,49 @@ call-to-action .button {
     color: #EBEEEE;
     margin-bottom: 6px;
 }
+#track_newest h6 {
+    font: 60px/68px 'Stick No Bills', sans-serif;
+    color: #EBEEEE;
+    margin-bottom: 6px;
+    text-align: center;
+}
 #track_newest p.lead {
     font: 18px/36px 'opensans-light', sans-serif;
     padding-right: 3%;
 }
 #track_newest .header-col { padding-top: 6px; }
 
+#track_newest .track_newest {
+    width: 700px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Tracks style */
+#tracks_all .tracks {
+    width: 400px;
+    overflow: hidden;
+    position: relative;
+}
+#tracks_all h6 {
+    font: 40px/48px 'Stick No Bills', sans-serif;
+    color: #EBEEEE;
+    margin-bottom: 6px;
+    text-align: center;
+}
+#track_newest {
+    padding-top: 96px;
+    padding-bottom: 102px;
+    color: #636363;
+}
+
+/* About Us Style */
+#aboutus {
+    background: #191919;
+    padding-top: 96px;
+    padding-bottom: 102px;
+    color: #636363;
+}
 
 /* track_newest form */
 #track_newest form { margin-bottom: 30px; }
@@ -886,11 +925,6 @@ call-to-action .button {
 #track_newest span.required {
     color: #11ABB0;
     font-size: 13px;
-}
-#track_newest .track_newest {
-    width: 700px;
-    overflow: hidden;
-    position: relative;
 }
 #message-warning, #message-success {
     display: none;
