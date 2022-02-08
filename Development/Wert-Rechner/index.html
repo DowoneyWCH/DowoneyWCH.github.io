@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="script" href="script.js">
+    <link rel="stylesheet" href="style.css">
+    <title>Rechner</title>
+</head>
+<body>
+<form>
+    <input id="quantity" class="qty" type="text" placeholder="quantity" />
+    <br>
+    <input type="button" value="Calculate" id="calc"/>
+</form>
+
+<!--display total cost here-->
+<span>The Cost is: <span id="total">totalcost</span></span>
+<script>
+
+    document.getElementById('calc').addEventListener('click', updater);
+
+    function updater () {
+        var cost = 25;
+        var quantity = document.getElementById('quantity').value;
+        var totalcost = (cost * quantity);
+
+        document.getElementById('total').innerText = totalcost;
+    }
+</script>
+</body>
+</html>
