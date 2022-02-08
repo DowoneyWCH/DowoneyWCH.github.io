@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 /*
 =====================================================================
 *   Ceevee v1.0 Layout Stylesheet
@@ -36,7 +37,7 @@ header {
     height: 1000px;
     min-height: 500px;
     width: 100%;
-    background: #161415 url('../images/') no-repeat top center;
+    background: #161415 url('../images/banner.png') no-repeat top center;
     background-size: cover !important;
     -webkit-background-size: cover !important;
     text-align: center;
@@ -61,7 +62,7 @@ header .banner {
 
 header .banner-text { width: 100%; }
 header .banner-text h1 {
-    font: 90px/1.1em 'opensans-bold', sans-serif;
+    font: 90px/1.1em 'Lobster', sans-serif;
     color: #fff;
     letter-spacing: -2px;
     margin: 0 auto 18px auto;
@@ -474,121 +475,6 @@ ul#nav li.current a { color: #199fa0; }
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content .popup-modal {
     opacity: 0;
 }
-
-/* ------------------------------------------------------------------ */
-/* f. Call To Action Section
-/* ------------------------------------------------------------------ */
-
-#call-to-action {
-    background: #212121;
-    padding-top: 66px;
-    padding-bottom: 48px;
-}
-#call-to-action h1 {
-    font: 18px/24px 'opensans-bold', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    color: #fff;
-}
-#call-to-action h1 span { display: none; }
-#call-to-action .header-col h1:before {
-    font-family: 'FontAwesome';
-    content: "\f0ac";
-    padding-right: 10px;
-    font-size: 72px;
-    line-height: 72px;
-    text-align: left;
-    float: left;
-    color: #fff;
-}
-#call-to-action .action {
-    margin-top: 12px;
-}
-#call-to-action h2 {
-    font: 28px/36px 'opensans-bold', sans-serif;
-    color: #EBEEEE;
-    margin-bottom: 6px;
-}
-#call-to-action h2 a {
-    color: inherit;
-}
-#call-to-action p {
-    color: #636363;
-    font-size: 17px;
-}
-#call-to-action .button:hover,
-#call-to-action .button:active {
-    background: #FFFFFF;
-    color: #0D0D0D;
-}
-#call-to-action p span {
-    font-family: 'opensans-semibold', sans-serif;
-    color: #D8D8D8;
-}
-
-/* ------------------------------------------------------------------
-/* g. Testimonials
-/* ------------------------------------------------------------------ */
-
-#testimonials {
-    background-size: cover !important;
-    -webkit-background-size: cover !important;
-    background-attachment: fixed;
-
-    position: relative;
-    min-height: 200px;
-    width: 100%;
-    overflow: hidden;
-}
-#testimonials .text-container {
-    padding-top: 96px;
-    padding-bottom: 66px;
-}
-#testimonials h1 {
-    font: 18px/24px 'opensans-bold', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    color: #fff;
-}
-#testimonials h1 span { display: none; }
-#testimonials .header-col { padding-top: 9px; }
-#testimonials .header-col h1:before {
-    font-family: 'FontAwesome';
-    content: "\f10d";
-    padding-right: 10px;
-    font-size: 72px;
-    line-height: 72px;
-    text-align: left;
-    float: left;
-    color: #fff;
-}
-
-/*	Blockquotes */
-#testimonials blockquote {
-    margin: 0 0px 30px 0px;
-    padding-left: 0;
-    position: relative;
-    text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
-}
-#testimonials blockquote:before { content: none; }
-#testimonials blockquote p {
-    font-family: 'librebaskerville-italic', serif;
-    padding: 0;
-    font-size: 24px;
-    line-height: 48px;
-    color: #fff
-}
-#testimonials blockquote cite {
-    display: block;
-    font-size: 12px;
-    font-style: normal;
-    line-height: 18px;
-    color: #fff;
-}
-#testimonials blockquote cite:before { content: "\2014 \0020"; }
-#testimonials blockquote cite a,
-#testimonials blockquote cite a:visited { color: #8B9798; border: none }
-
 /* Flex Slider
 /* ------------------------------------------------------------------ */
 
@@ -684,8 +570,16 @@ ul#nav li.current a { color: #199fa0; }
     padding-bottom: 102px;
     color: #636363;
 }
-#section1-inner {
+.section1-inner {
     max-width: 75%;
+    background-image: url('../images/background_section1.jpg');
+    background-position: center;
+    overflow: hidden;
+    margin: auto;
+    border-radius: 20px;
+}
+.section1-events {
+    max-width: 55%;
     background-image: url('../images/background_section1.jpg');
     background-position: center;
     overflow: hidden;
@@ -747,10 +641,17 @@ ul#nav li.current a { color: #199fa0; }
     font: 18px/36px 'opensans-light', sans-serif;
     padding-right: 3%;
 }
+#section1 p.heading {
+    font: 80px/88px 'Lobster', sans-serif;
+    color: #EBEEEE;
+    margin-bottom: 2rem;
+    text-align: center;
+}
 #section1 #events {
     width: 100%;
     height: 16rem;
-    margin-top: 10rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
 }
 #section1 .header-col { padding-top: 6px; }
 
