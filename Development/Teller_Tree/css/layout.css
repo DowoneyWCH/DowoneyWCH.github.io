@@ -36,7 +36,7 @@ header {
     height: 1000px;
     min-height: 500px;
     width: 100%;
-    background: #161415 url('images/') no-repeat top center;
+    background: #161415 url('../images/') no-repeat top center;
     background-size: cover !important;
     -webkit-background-size: cover !important;
     text-align: center;
@@ -679,10 +679,18 @@ ul#nav li.current a { color: #199fa0; }
 /* ------------------------------------------------------------------ */
 
 #section1 {
-    background: green;
+    background: #101010;
     padding-top: 96px;
     padding-bottom: 102px;
     color: #636363;
+}
+#section1-inner {
+    max-width: 75%;
+    background-image: url('../images/background_section1.jpg');
+    background-position: center;
+    overflow: hidden;
+    margin: auto;
+    border-radius: 20px;
 }
 #section1 .section-head { margin-bottom: 42px; }
 
@@ -718,16 +726,22 @@ ul#nav li.current a { color: #199fa0; }
     margin-bottom: 6px;
 }
 #section1 .highlight {
-    font: 20px/28px 'opensans-bold', sans-serif;
+    font: 40px/48px 'opensans-bold', sans-serif;
     color: cyan;
     margin-bottom: 6px;
     text-align: center;
 }
 #section1 .info {
-    font: 20px/28px 'opensans-bold', sans-serif;
+    font: 40px/48px 'opensans-bold', sans-serif;
     color: #EBEEEE;
     margin-bottom: 6px;
     text-align: center;
+}
+#section1 .info-top {
+    padding-top: 6rem;
+}
+#section1 .info-bottom {
+    padding-bottom: 6rem;
 }
 #section1 p.lead {
     font: 18px/36px 'opensans-light', sans-serif;
