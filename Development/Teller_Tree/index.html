@@ -46,7 +46,7 @@
     <nav id="nav-wrap">
         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
         <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
-        <ul id="nav" class="nav">
+        <ul id="nav" class="nav flex-column">
             <li class="current"><a class="smoothscroll" href="#home"><b>Start</b></a></li>
             <li><a class="smoothscroll" href="#section1"><b>Über Uns</b></a></li>
             <li><a class="smoothscroll" href="#events"><b>Events</b></a></li>
@@ -63,6 +63,7 @@
 <!-- Contact Section
 ================================================== -->
 <section id="section1">
+    <!-- Über uns -->
     <p class="heading">Über uns</p>
     <div style="max-width: 60%; margin: auto"> <hr/> </div>
     <div class="section1-inner" title="Über uns">
@@ -77,6 +78,7 @@
             <p class="info info-bottom"> unter der Nummer 1793875893.</p>
         </div>
     </div>
+    <!-- Events -->
     <div class="row" style="min-height: 10rem"></div>
     <p class="heading">Events</p>
     <div style="max-width: 30%; margin: auto"> <hr/> </div>
@@ -86,6 +88,29 @@
                     id="events"></iframe>
         </div>
     </div>
+    <!-- Preis -->
+    <div class="row" style="min-height: 10rem"></div>
+    <p class="heading"> Preise & Preisklassen </p>
+    <div style="max-width: 30%; margin: auto"> <hr/> </div>
+        <div class="section1-value">
+            <br>
+            <div class="row wood_value">
+                <form>
+                    <input id="amount" type="number" placeholder="Kg Stämme"/>
+                    <br>
+                    <select id="rang" name="Rang:">
+                        <option value="125">Rang 1</option>
+                        <option value="130">Rang 2</option>
+                        <option value="135">Rang 3</option>
+                        <option value="140">Rang 4</option>
+                        <option value="145">Rang 5</option>
+                        <option value="150">Rang 6</option>
+                    </select>
+                    <input type="button" value="Berechnen" id="calc"/>
+                </form>
+                <span id="fin-preis">Dein Holz ist <span id="total">0</span>€ wert!</span>
+            </div>
+        </div>
 </section>
 
 <!--======================================================= -->
@@ -115,5 +140,16 @@
 <script src="js/jquery.fittext.js"></script>
 <script src="js/magnific-popup.js"></script>
 <script src="js/init.js"></script>
+<script>
+    document.getElementById('calc').addEventListener('click', updater);
+
+    function updater () {
+        const cost = document.getElementById('rang').value;
+        const quantity = document.getElementById('amount').value;
+        let total = (cost * quantity);
+
+        document.getElementById('total').innerText = total;
+    }
+</script>
 </body>
 </html>
