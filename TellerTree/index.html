@@ -50,6 +50,7 @@
             <li class="current"><a class="smoothscroll" href="#home"><b>Start</b></a></li>
             <li><a class="smoothscroll" href="#section1"><b>Über Uns</b></a></li>
             <li><a class="smoothscroll" href="#events"><b>Events</b></a></li>
+            <li><a class="smoothscroll" href="#preise"><b>Preise</b></a></li>
         </ul>
     </nav>
     <div class="row banner">
@@ -90,7 +91,7 @@
     </div>
     <!-- Preis -->
     <div class="row" style="min-height: 10rem"></div>
-    <p class="heading"> Preise & Preisklassen </p>
+    <p class="heading" id="preise"> Preise </p>
     <div style="max-width: 30%; margin: auto"> <hr/> </div>
         <div class="section1-value">
             <br>
@@ -98,14 +99,6 @@
                 <form>
                     <input id="amount" type="number" placeholder="Kg Stämme"/>
                     <br>
-                    <select id="rang" name="Rang:">
-                        <option value="125">Rang 1</option>
-                        <option value="130">Rang 2</option>
-                        <option value="135">Rang 3</option>
-                        <option value="140">Rang 4</option>
-                        <option value="145">Rang 5</option>
-                        <option value="150">Rang 6</option>
-                    </select>
                     <input type="button" value="Berechnen" id="calc"/>
                 </form>
                 <span id="fin-preis">Dein Holz ist <span id="total">0</span>€ wert!</span>
@@ -142,9 +135,9 @@
 <script src="js/init.js"></script>
 <script>
     document.getElementById('calc').addEventListener('click', updater);
+    const cost = 125;
 
     function updater () {
-        const cost = document.getElementById('rang').value;
         const quantity = document.getElementById('amount').value;
         let total = (cost * quantity);
 

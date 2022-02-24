@@ -184,7 +184,7 @@ ul#nav li a {
 }
 
 ul#nav li a:active { background-color: transparent !important; }
-ul#nav li.current a { color: green;}
+ul#nav li.current a { color: #6db56d;}
 
 
 /* ------------------------------------------------------------------ */
@@ -628,8 +628,8 @@ ul#nav li.current a { color: green;}
     margin-bottom: 6px;
 }
 #section1 .highlight {
-    font: 40px/48px 'opensans-bold', sans-serif;
-    color: cyan;
+    font: 50px/58px 'opensans-bold', sans-serif;
+    color: #ABFFF5;
     margin-bottom: 6px;
     text-align: center;
 }
