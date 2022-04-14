@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 body {
     background: #0f0f0f;
     max-width: 100%;
@@ -5,8 +6,8 @@ body {
 }
 header {
     position: relative;
-    height: 1000px;
-    min-height: 500px;
+    height: 500px;
+    max-height: 500px;
     width: 100%;
     background: #161415 url('../images/VillaNight.png') no-repeat top center;
     background-size: cover !important;
@@ -869,59 +870,48 @@ footer .social-links li:first-child { margin-left: 0; }
 }
 #go-top a:hover { background-color: #0F9095; }
 
-.wrapper {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 30px;
-    grid-auto-rows: minmax(200px, auto);
-}
-#DWCH {
-    background: #101010 url('../images/DWCH.png') no-repeat center;
+.form {
     border-radius: 100px;
-    width: 50rem;
-    grid-column: 1;
-    grid-row: 1;
-    height: 50rem;
+    width: 60rem;
+    height: 30rem;
     margin: 0;
+}
+.form-second-row {
+    border-radius: 100px;
+    width: 60rem;
+    height: 30rem;
+    margin-top: 5rem;
+}
+
+#DWCH {
+    background: #101010 url('../images/DWCH_ccexpress.png') no-repeat center;
+    position: absolute;
+    left: 1rem;
 }
 #GhostRecords {
-    background: #101010 url('../images/Ghost Records.png') no-repeat center;
-    border-radius: 100px;
-    grid-column: 4;
-    grid-row: 4;
-    height: 50rem;
-    margin: 0;
+    background: #101010 url('../images/Ghost Records_ccexpress.png') no-repeat center;
+    position: absolute;
+    right: 1rem;
 }
 #ComanyCoin {
-    background: #101010 url('../images/Ghost Records.png') no-repeat center;
-    border-radius: 100px;
-    grid-column: 4;
-    grid-row: 2;
-    height: 50rem;
-    margin: 0;
+    background: #101010 url('../images/VillaNight.png') no-repeat center;
+    margin: auto;
 }
 #Autovermietuzng {
-    background: #101010 url('../images/Autovermietung.png') no-repeat center;
-    border-radius: 100px;
-    grid-column: 1;
-    grid-row: 2;
-    height: 50rem;
-    margin: 0;
+    background: #101010 url('../images/Autovermietung_ccexpress.png') no-repeat center;
+    position: absolute;
+    left: 1rem;
 }
-#TellerTree {
-     background: #101010 url('../images/Teller Tree.png') no-repeat center;
-     border-radius: 100px;
-     grid-column: 2;
-     grid-row: 2;
-     height: 50rem;
-     margin: 0;
- }
-#CentralInformations{
-    background: #101010 url('../images/Central Informations.png') no-repeat center;
-    border-radius: 100px;
-    grid-column: 3;
-    grid-row: 2;
-    height: 50rem;
-    width: 100rem;
+#CentralInformations {
+    background: #101010 url('../images/Central Informations_ccexpress.png') no-repeat center;
+    top: 5rem;
+    margin: auto;
+    margin-top: 5rem;
+}
+.section1-head {
     text-align: center;
+    font-size: 60px;
+    font-family: 'Lobster', Sans-serif, serif;
+    color: white;
+    margin-bottom: 5rem;
 }
