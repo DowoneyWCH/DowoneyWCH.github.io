@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Company Coin</title>
+
+    <script data-main="scripts/app" src="require.js"></script>
+</head>
+<body>
+<?php
+$servername = "localhost";
+$username = "website";
+$password = "124578";
+$dbname = "companycoindb";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+die("Connection failed: " . $conn->connect_error);
+}
+
+$sql = "SELECT course FROM transactions WHERE type = 'Course'";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+// output data of each row
+while($row = $result->fetch_assoc()) {
+echo $row["course"]. "<br>";
+}
+} else {
+echo "0 results";
+}
+$conn->close();
+?>
+</body>
+</html>
