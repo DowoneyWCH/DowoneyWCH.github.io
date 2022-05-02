@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills&display=swap');
 /*
 =====================================================================
 *   Ceevee v1.0 Layout Stylesheet
@@ -8,13 +9,14 @@
    TOC:
    a. General Styles
    b. Header Styles
-   c. About Section
-   d. Resume Section
-   e. Portfolio Section
-   f. Call To Action Section
-   g. Testimonials Section
-   h. Contact Section
-   i. Footer
+   c. Track Newest Section
+   d. Tracks all Section
+   e. About Section
+   f. Resume Section
+   g. Portfolio Section
+   h. Call To Action Section
+   i. Testimonials Section
+   j. Footer
 
 ===================================================================== */
 
@@ -186,11 +188,158 @@ ul#nav li a {
 ul#nav li a:active { background-color: transparent !important; }
 ul#nav li.current a { color: #199fa0; }
 
-
 /* ------------------------------------------------------------------ */
-/* c. About Section
+/* c. Track Newest Section
+/* ------------------------------------------------------------------ */
+#track_newest {
+    background: #191919;
+    padding-top: 96px;
+    padding-bottom: 102px;
+    color: #636363;
+}
+#track_newest .section-head { margin-bottom: 42px; }
+
+#track_newest a, #track_newest a:visited  { color: #11ABB0; }
+#track_newest a:hover, #track_newest a:focus { color: #fff; }
+
+#track_newest h1 {
+    font: 18px/24px 'opensans-bold', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #EBEEEE;
+    margin-bottom: 6px;
+}
+#track_newest h1 span { display: none; }
+#track_newest h1:before {
+    font-family: 'FontAwesome';
+    content: "\f0e0";
+    padding-right: 10px;
+    font-size: 72px;
+    line-height: 72px;
+    text-align: left;
+    float: left;
+    color: #ebeeee;
+}
+
+/* Track_newest style */
+#track_newest h4 {
+    font: 16px/24px 'opensans-bold', sans-serif;
+    color: #EBEEEE;
+    margin-bottom: 6px;
+}
+#track_newest h5 {
+    font: 20px/28px 'opensans-bold', sans-serif;
+    color: #EBEEEE;
+    margin-bottom: 6px;
+}
+#track_newest h6 {
+    font: 60px/68px 'Stick No Bills', sans-serif;
+    color: #EBEEEE;
+    margin-bottom: 6px;
+    text-align: center;
+}
+#track_newest p.lead {
+    font: 18px/36px 'opensans-light', sans-serif;
+    padding-right: 3%;
+}
+#track_newest .header-col { padding-top: 6px; }
+
+#track_newest .track_newest {
+    width: 700px;
+    overflow: hidden;
+    position: relative;
+}
+#track_newest {
+    padding-top: 96px;
+    padding-bottom: 102px;
+    color: #636363;
+}
+/* track_newest form */
+#track_newest form { margin-bottom: 30px; }
+#track_newest label {
+    font: 15px/24px 'opensans-bold', sans-serif;
+    margin: 12px 0;
+    color: #EBEEEE;
+    display: inline-block;
+    float: left;
+    width: 26%;
+}
+#track_newest input,
+#track_newest textarea,
+#track_newest select {
+    padding: 18px 20px;
+    color: #eee;
+    background: #373233;
+    margin-bottom: 42px;
+    border: 0;
+    outline: none;
+    font-size: 15px;
+    line-height: 24px;
+    width: 65%;
+}
+#track_newest input:focus,
+#track_newest textarea:focus,
+#track_newest select:focus {
+    color: #fff;
+    background-color: #11ABB0;
+}
+#track_newest button.submit {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color:#fff;
+    background: #0D0D0D;
+    border: none;
+    cursor: pointer;
+    height: auto;
+    display: inline-block;
+    border-radius: 3px;
+    margin-left: 26%;
+}
+#track_newest button.submit:hover {
+    color: #0D0D0D;
+    background: #fff;
+}
+#track_newest span.required {
+    color: #11ABB0;
+    font-size: 13px;
+}
+/* ------------------------------------------------------------------ */
+/* d. Tracks All Section
+/* ------------------------------------------------------------------ */
+#tracks_all .tracks {
+    width: 400px;
+    overflow: hidden;
+    position: relative;
+}
+#tracks_all h6 {
+    font: 40px/48px 'Stick No Bills', sans-serif;
+    color: #EBEEEE;
+    margin-bottom: 6px;
+    text-align: center;
+}
+#tracks_all #tracks_all_head {
+    font: 60px/68px 'opensans-bold', sans-serif;
+    color: #EBEEEE;
+    margin-bottom: 6px;
+    text-align: center;
+}
+/* ------------------------------------------------------------------ */
+/* e. About Section
 /* ------------------------------------------------------------------ */
 
+/* About Us Style */
+#aboutus {
+    background: #191919;
+    padding-top: 96px;
+    padding-bottom: 102px;
+    color: #636363;
+}
+#aboutus h6 {
+    font: 30px/43px 'opensans-bold', sans-serif;
+    color: #EBEEEE;
+    margin-bottom: 6px;
+    text-align: center;
+}
 #about {
     background: #2B2B2B;
     padding-top: 96px;
@@ -786,112 +935,6 @@ call-to-action .button {
     background: rgba(255, 255, 255, .9);
     cursor: default;
 }
-
-/* ------------------------------------------------------------------ */
-/* h. Contact Section
-/* ------------------------------------------------------------------ */
-
-#track_newest {
-    background: #191919;
-    padding-top: 96px;
-    padding-bottom: 102px;
-    color: #636363;
-}
-#track_newest .section-head { margin-bottom: 42px; }
-
-#track_newest a, #track_newest a:visited  { color: #11ABB0; }
-#track_newest a:hover, #track_newest a:focus { color: #fff; }
-
-#track_newest h1 {
-    font: 18px/24px 'opensans-bold', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    color: #EBEEEE;
-    margin-bottom: 6px;
-}
-#track_newest h1 span { display: none; }
-#track_newest h1:before {
-    font-family: 'FontAwesome';
-    content: "\f0e0";
-    padding-right: 10px;
-    font-size: 72px;
-    line-height: 72px;
-    text-align: left;
-    float: left;
-    color: #ebeeee;
-}
-
-#track_newest h4 {
-    font: 16px/24px 'opensans-bold', sans-serif;
-    color: #EBEEEE;
-    margin-bottom: 6px;
-}
-#track_newest h5 {
-    font: 20px/28px 'opensans-bold', sans-serif;
-    color: #EBEEEE;
-    margin-bottom: 6px;
-}
-#track_newest p.lead {
-    font: 18px/36px 'opensans-light', sans-serif;
-    padding-right: 3%;
-}
-#track_newest .header-col { padding-top: 6px; }
-
-
-/* track_newest form */
-#track_newest form { margin-bottom: 30px; }
-#track_newest label {
-    font: 15px/24px 'opensans-bold', sans-serif;
-    margin: 12px 0;
-    color: #EBEEEE;
-    display: inline-block;
-    float: left;
-    width: 26%;
-}
-#track_newest input,
-#track_newest textarea,
-#track_newest select {
-    padding: 18px 20px;
-    color: #eee;
-    background: #373233;
-    margin-bottom: 42px;
-    border: 0;
-    outline: none;
-    font-size: 15px;
-    line-height: 24px;
-    width: 65%;
-}
-#track_newest input:focus,
-#track_newest textarea:focus,
-#track_newest select:focus {
-    color: #fff;
-    background-color: #11ABB0;
-}
-#track_newest button.submit {
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    color:#fff;
-    background: #0D0D0D;
-    border: none;
-    cursor: pointer;
-    height: auto;
-    display: inline-block;
-    border-radius: 3px;
-    margin-left: 26%;
-}
-#track_newest button.submit:hover {
-    color: #0D0D0D;
-    background: #fff;
-}
-#track_newest span.required {
-    color: #11ABB0;
-    font-size: 13px;
-}
-#track_newest .track_newest {
-    width: 700px;
-    overflow: hidden;
-    position: relative;
-}
 #message-warning, #message-success {
     display: none;
     background: #0F0F0F;
@@ -966,6 +1009,11 @@ footer .social-links li {
     padding: 0;
     margin-left: 42px;
     color: #F06000;
+}
+footer #cpr_desc {
+    font: 16px/24px 'opensans-bold', sans-serif;
+    color: #EBEEEE;
+    margin-bottom: 6px;
 }
 
 footer .social-links li:first-child { margin-left: 0; }

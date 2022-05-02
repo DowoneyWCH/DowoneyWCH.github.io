@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/DowoneyWebsideService.iml" filepath="$PROJECT_DIR$/.idea/DowoneyWebsideService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java/Java.iml" filepath="$PROJECT_DIR$/Java/Java.iml" />
     </modules>
   </component>
 </project>

@@ -1,0 +1,161 @@
+<!-- Edit Layout in 'style.css' -->
+
+
+<!DOCTYPE html>
+<!--[if lt IE 8 ]>
+<html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>
+<html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!-->
+<html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+    <!--- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Gambino Gmbh</title>
+    <meta name="description" content="DWC&H">
+    <meta name="author" content="Dowoney-Web-Creating-&-Hosting">
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <!-- Script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+
+    <!-- Favicons
+     ================================================== -->
+    <link rel="shortcut icon" type="image/png" href="images/Logo_Kurz_small.png">
+
+</head>
+
+<body>
+
+<!-- Header
+================================================== -->
+<header id="home">
+    <nav id="nav-wrap">
+        <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+        <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+        <ul id="nav" class="nav flex-column">
+            <li class="current"><a class="smoothscroll" href="#home"><b>Start</b></a></li>
+            <li><a class="smoothscroll" href="#section1"><b>Über Uns</b></a></li>
+            <li><a class="smoothscroll" href="#preise"><b>Preise</b></a></li>
+        </ul>
+    </nav>
+    <div class="row banner">
+        <div class="banner-text">
+            <img class="responsive-headline headline" src="images/gambino.png">
+            <hr/>
+        </div>
+    </div>
+</header>
+
+<!-- Contact Section
+================================================== -->
+<section id="section1">
+    <!-- Über uns -->
+    <p class="heading">Über uns</p>
+    <div style="max-width: 60%; margin: auto"> <hr/> </div>
+    <div class="section1-inner" title="Über uns">
+        <div class="row">
+            <p class="info info-top"> Wir sind die Gambino's! Ihr Unternehmen für alles!<br>
+                Wir liefern Ware, wir bezahlen unsere Mitarbeiter sehr gut!<br>
+                Wir haben viele Job Angebote wie Förster aber auch Minenarbeiter!<br>
+                Interesse? Melden Sie sich bei dem <br>
+            <p class="highlight"> CEO Giovanni Gambino</p>
+            <p class="info"> unter der Nummer 1793878398 oder im unteren Formular! </p>
+        </div>
+    </div>
+    <!-- Preis -->
+    <div class="row" style="min-height: 10rem"></div>
+    <p class="heading" id="preise"> Preise Holz </p>
+    <div style="max-width: 30%; margin: auto"> <hr/> </div>
+        <div class="section1-value">
+            <br>
+            <div class="row" align="center">
+                <form>
+                    <input id="amount_wood" type="number" placeholder="Kg Stämme"/>
+                    <br>
+                    <input type="button" value="Berechnen" id="calc_wood"/>
+                </form>
+                <span class="fin-preis">Dein Holz ist <span id="total_wood">0</span>€ wert!</span>
+                <br>
+            </div>
+        </div>
+    <div class="row" style="min-height: 10rem"></div>
+    <p class="heading"> Preise Eisen </p>
+    <div style="max-width: 30%; margin: auto"> <hr/> </div>
+    <div class="section1-value">
+        <br>
+        <div class="row" align="center">
+            <form>
+                <input id="amount_iron" type="number" placeholder="Kg Stämme"/>
+                <br>
+                <input type="button" value="Berechnen" id="calc_iron"/>
+            </form>
+            <span class="fin-preis">Dein Eisen ist <span id="total_iron">0</span>€ wert!</span>
+            <br>
+        </div>
+    </div>
+</section>
+
+<!--======================================================= -->
+<footer id="footer">
+    <div class="row">
+        <div class="twelve columns">
+            <li class="address">
+                Gambino Gmbh<br>
+                Ringstaße 8<br>
+                East-Cliff, United Islands.<br>
+            </li>
+            <ul class="copyright">
+                <li>DWCH &copy; Copyright 2022</li>
+                <li>Provided by <a href="../../index.html" title="" target="_blank">Dowoney Web Creation & Hosting</a>
+                </li>
+            </ul>
+        </div>
+        <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+    </div>
+</footer>
+<!-- ================================================== -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/jquery.flexslider.js"></script>
+<script src="js/waypoints.js"></script>
+<script src="js/jquery.fittext.js"></script>
+<script src="js/magnific-popup.js"></script>
+<script src="js/init.js"></script>
+<script>
+    document.getElementById('calc_wood').addEventListener('click', updater_wood);
+    document.getElementById('calc_iron').addEventListener('click', updater_iron);
+    const cost_wood = 100;
+    const cost_iron = 100;
+
+    function updater_wood () {
+        const quantity = document.getElementById('amount_wood').value;
+        let total = (cost_wood * quantity);
+
+        document.getElementById('total_wood').innerText = total;
+    }
+    function updater_iron () {
+        const quantity = document.getElementById('amount_iron').value;
+        let total = (cost_iron * quantity);
+
+        document.getElementById('total_iron').innerText = total;
+    }
+</script>
+</body>
+</html>
+
+

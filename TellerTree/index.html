@@ -1,0 +1,148 @@
+<!-- Edit Layout in 'style.css' -->
+
+
+<!DOCTYPE html>
+<!--[if lt IE 8 ]>
+<html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>
+<html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!-->
+<html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+    <!--- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Teller Tree</title>
+    <meta name="description" content="DWS">
+    <meta name="author" content="Dowoney-Web-Creating-&-Hosting">
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <!-- Script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+
+    <!-- Favicons
+     ================================================== -->
+    <link rel="shortcut icon" type="image/png" href="images/Logo_Kurz_small.png">
+
+</head>
+
+<body>
+
+<!-- Header
+================================================== -->
+<header id="home">
+    <nav id="nav-wrap">
+        <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+        <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+        <ul id="nav" class="nav flex-column">
+            <li class="current"><a class="smoothscroll" href="#home"><b>Start</b></a></li>
+            <li><a class="smoothscroll" href="#section1"><b>Über Uns</b></a></li>
+            <li><a class="smoothscroll" href="#events"><b>Events</b></a></li>
+            <li><a class="smoothscroll" href="#preise"><b>Preise</b></a></li>
+        </ul>
+    </nav>
+    <div class="row banner">
+        <div class="banner-text">
+            <h1 class="responsive-headline">Teller Tree</h1>
+            <hr/>
+        </div>
+    </div>
+</header>
+
+<!-- Contact Section
+================================================== -->
+<section id="section1">
+    <!-- Über uns -->
+    <p class="heading">Über uns</p>
+    <div style="max-width: 60%; margin: auto"> <hr/> </div>
+    <div class="section1-inner" title="Über uns">
+        <div class="row">
+            <p class="info info-top"> Teller Tree ist eine von Maximilian Teller im Jahr 2021 gegründete Firma.<br>
+                Teller Tree ist die preiswerteste Firma im Bereich der Holzindustrie, mit einem Preisangebot von
+                140€ pro Kilogramm.<br>
+                Erreichbar ist Teller Tree entweder bei dem</p>
+            <p class="highlight"> CEO Maximilian Teller</p>
+            <p class="info"> unter der Nummer 1793873602 oder bei </p>
+            <p class="highlight"> Steve Sounders dem COO</p>
+            <p class="info info-bottom"> unter der Nummer 1793875893.</p>
+        </div>
+    </div>
+    <!-- Events -->
+    <div class="row" style="min-height: 10rem"></div>
+    <p class="heading">Events</p>
+    <div style="max-width: 30%; margin: auto"> <hr/> </div>
+    <div class="section1-events">
+        <div class="row">
+            <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQCIuFKgP70PVTY87QYPQGzzLxpKRtdj3Nd0q4NK4_Ydct7mSTya3QvzrpLIkT3tU7oHjT-szWjFq0T/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"
+                    id="events"></iframe>
+        </div>
+    </div>
+    <!-- Preis -->
+    <div class="row" style="min-height: 10rem"></div>
+    <p class="heading" id="preise"> Preise </p>
+    <div style="max-width: 30%; margin: auto"> <hr/> </div>
+        <div class="section1-value">
+            <br>
+            <div class="row" align="center">
+                <form>
+                    <input id="amount" type="number" placeholder="Kg Stämme"/>
+                    <br>
+                    <input type="button" value="Berechnen" id="calc"/>
+                </form>
+                <span id="fin-preis">Dein Holz ist <span id="total">0</span>€ wert!</span>
+            </div>
+        </div>
+</section>
+
+<!--======================================================= -->
+<footer id="footer">
+    <div class="row">
+        <div class="twelve columns">
+            <li class="address">
+                Teller Tree<br>
+                Marktstraße 2, EG, 1. Tür Links,<br>
+                Central Bay, United Islands.<br>
+            </li>
+            <ul class="copyright">
+                <li>DWCH &copy; Copyright 2022</li>
+                <li>Provided by <a href="../../index.html" title="" target="_blank">Dowoney Web Creation & Hosting</a>
+                </li>
+            </ul>
+        </div>
+        <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+    </div>
+</footer>
+<!-- ================================================== -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/jquery.flexslider.js"></script>
+<script src="js/waypoints.js"></script>
+<script src="js/jquery.fittext.js"></script>
+<script src="js/magnific-popup.js"></script>
+<script src="js/init.js"></script>
+<script>
+    document.getElementById('calc').addEventListener('click', updater);
+    const cost = 140;
+
+    function updater () {
+        const quantity = document.getElementById('amount').value;
+        let total = (cost * quantity);
+
+        document.getElementById('total').innerText = total;
+    }
+</script>
+</body>
+</html>
